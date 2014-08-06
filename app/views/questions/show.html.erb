@@ -1,0 +1,5 @@
+<%= @question.question %>
+
+<%= form_for [@question] do |f|%>
+	<div><%= f.text_field :answer %></div>
+<% end %>

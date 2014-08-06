@@ -1,0 +1,9 @@
+<h2>Trivial</h2>
+
+<% @random.each do |quiz|%>
+<div>
+	<div><%= quiz.question %></div>
+	<%= link_to('Answer the question', question_path(quiz.id))%>
+</div>
+<% end %>
+<%= button_to('Create a new question', new_question_path, :method => :get) %>
